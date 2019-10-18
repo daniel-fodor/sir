@@ -1,0 +1,29 @@
+.breadcrumbs {
+    background: #{$gray-v5};
+
+    ul {
+        display: flex;
+        padding: 15px 0;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(even) {
+                margin: 0 10px;
+                position: relative;
+                top: 1px;
+            }
+
+            a {
+                color: #{$black};
+                display: block;
+                font-size: 13px;
+
+                &:hover {
+                    color: #{$green-v1};
+                }
+            }
+        }
+    }
+}

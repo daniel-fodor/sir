@@ -1,0 +1,45 @@
+.sidebar {
+
+    &--left {
+        margin-right: 30px;
+    }
+
+    &--right {
+        margin-left: 30px;
+    }
+
+
+    &--sm {
+        width: 280px;
+        flex: 1 0 280px;
+    }
+
+    &--lg {
+        width: 390px;
+        flex: 1 0 390px;
+    }
+
+    @media (max-width: 992px) {
+        &--sm, &--lg {
+            width: 270px;
+            flex: 1 0 270px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        &--left,
+        &--right {
+            margin-right: 0;
+            margin-left: 0;
+            order: 2;
+        }
+
+        &--sm, &--lg {
+            width: 100%;
+            flex: 1 0 100%;
+        }
+    }
+}
+
+
+@import '../widgets';

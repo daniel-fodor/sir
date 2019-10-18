@@ -1,0 +1,128 @@
+/* Page Footer style  */
+.page-footer {
+    p {
+        color: #{$white};
+        margin-bottom: 0;
+    }
+
+    &__top {
+        padding: 45px 0;
+        background: #{$black-v1};
+
+        .footer-column {
+
+            @media (max-width: 992px) {
+                margin-bottom: 40px;
+            }
+
+            .title {
+                color: #{$white};
+                font-size: 1.125rem;
+                line-height: 1;
+                margin-bottom: 22px;
+            }
+
+            .contact-info {
+
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+
+                a {
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    color: #{$white};
+                    margin-bottom: 0;
+
+                    &:hover {
+                        color: #{$green-v1};
+                    }
+
+                    i {
+                        position: relative;
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            p {
+                margin-bottom: 18px;
+                font-size: 13px;
+            }
+        }
+
+        .footer-menu {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+
+                a {
+                    color: #{$white};
+                    font-size: 14px;
+
+                    &:hover {
+                        color: #{$green-v1};
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        background: #{$black-v2};
+        padding: 15px;
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                justify-content: center;
+
+                p {
+                    margin-top: 10px;
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    /* footer search  forms */
+    .footer-search-form {
+        width: 100%;
+        position: relative;
+
+        .input-search {
+            height: 40px;
+        }
+
+        input {
+            background: #{$white};
+            padding: 0 35px 0 12px;
+            height: inherit;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 12px;
+            @include placeholder(#{$black});
+        }
+
+        button {
+            position: absolute;
+            background: none;
+            top: 0;
+            right: 0;
+            height: inherit;
+            color: #{$black};
+            padding: 0 12px;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

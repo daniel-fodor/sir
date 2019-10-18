@@ -1,0 +1,153 @@
+/* cards style */
+
+
+/* home page */
+.goal-card {
+
+    &:hover {
+        .featured-image {
+
+            &:before {
+                opacity: 0.75;
+            }
+
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .featured-image {
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            background: linear-gradient(to bottom, rgba(231,56,39,0) 0%, rgba(0,0,0,0.6) 100%);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: opacity .5s ease-in-out;
+        }
+
+        img {
+            transition: transform .5s ease-in-out;
+            width: 100%;
+        }
+
+        h2 {
+            position: absolute;
+            z-index: 10;
+            color: #{$white};
+            font-size: 1.25rem;
+            padding: 30px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .item-body {
+        p {
+            margin-bottom: 20px;
+            line-height: 1.65;
+            color: #{$black};
+        }
+    }
+}
+
+/* home page: package cards */
+.package-card {
+    border-radius: 0;
+    margin-bottom: 20px;
+
+    .card-title {
+        font-size: 1.0625rem;
+
+        a {
+            font-size: inherit;
+            color: #{$black};
+        }
+    }
+
+    .package-info {
+        display: flex;
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        div {
+            display: flex;
+            align-items: center;
+            color: #{$gray-v2};
+            font-size: 13px;
+
+            i {
+                margin-right: 7px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+
+}
+
+
+/* home page: client cards */
+.client-card {
+    background: #{$gray-v1};
+    border-right: 1px solid #{$white};
+    padding: 30px 20px;
+
+    @media (max-width: 992px) {
+        margin-bottom: 70px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: -72px;
+
+        h3, h4 {
+            font-size: 15px;
+        }
+
+        h3 {
+            color: #{$black};
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        h4 {
+            color: #{$green-v1};
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+
+        img {
+            max-width: 85px;
+            margin-bottom: 25px;
+            height: 84px;
+        }
+    }
+
+    .body {
+        text-align: center;
+
+        blockquote {
+            font-size: 14px;
+            font-style: italic;
+            line-height: 1.75;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+
+}

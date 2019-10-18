@@ -1,0 +1,186 @@
+.raster-icon {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.duration {
+        background-image: url("#{$imgUrl}/raster-icons/duration.png");
+        width: 18px;
+        height: 17px;
+    }
+
+    &.city {
+        background-image: url("#{$imgUrl}/raster-icons/city.png");
+        width: 18px;
+        height: 17px;
+    }
+
+    &.email {
+        background-image: url("#{$imgUrl}/raster-icons/email.png");
+        width: 18px;
+        height: 13px;
+    }
+
+    &.phone {
+        background-image: url("#{$imgUrl}/raster-icons/phone.png");
+        width: 18px;
+        height: 19px;
+    }
+
+    &.send {
+        background-image: url("#{$imgUrl}/raster-icons/send.png");
+        width: 22px;
+        height: 19px;
+    }
+
+    &.wildlife {
+        background-image: url("#{$imgUrl}/raster-icons/icon-wildlife.png");
+        width: 17px;
+        height: 14px;
+    }
+
+    &.ecotours {
+        background-image: url("#{$imgUrl}/raster-icons/icon-ecotours.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.backpacking {
+        background-image: url("#{$imgUrl}/raster-icons/icon-backpacking.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.backpacking {
+        background-image: url("#{$imgUrl}/raster-icons/icon-backpacking.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.camping {
+        background-image: url("#{$imgUrl}/raster-icons/icon-camping.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.trekking {
+        background-image: url("#{$imgUrl}/raster-icons/icon-trekking.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.honeymoon {
+        background-image: url("#{$imgUrl}/raster-icons/icon-honeymoon.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.biking {
+        background-image: url("#{$imgUrl}/raster-icons/icon-biking.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.adventure {
+        background-image: url("#{$imgUrl}/raster-icons/icon-adventure.png");
+        width: 17px;
+        height: 17px;
+    }
+
+    &.family {
+        background-image: url("#{$imgUrl}/raster-icons/icon-family.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.tag {
+        background-image: url("#{$imgUrl}/raster-icons/tag-icon.png");
+        width: 17px;
+        height: 17px;
+    }
+
+    &.category {
+        background-image: url("#{$imgUrl}/raster-icons/category-icon.png");
+        width: 18px;
+        height: 17px;
+    }
+
+    &.clock {
+        background-image: url("#{$imgUrl}/raster-icons/clock.png");
+        width: 17px;
+        height: 16px;
+    }
+
+    &.sun {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/sun.png");
+        width: 19px;
+        height: 19px;
+    }
+
+    &.moon {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/moon.png");
+        width: 19px;
+        height: 19px;
+    }
+
+    &.flag {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/flag.png");
+        width: 19px;
+        height: 19px;
+    }
+
+    &.transport {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/transport.png");
+        width: 31px;
+        height: 33px;
+    }
+
+    &.food {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/food.png");
+        width: 31px;
+        height: 24px;
+    }
+
+    &.hotels {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/hotels.png");
+        width: 29px;
+        height: 29px;
+    }
+
+    &.sightseeing {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/sightseeing.png");
+        width: 31px;
+        height: 25px;
+    }
+
+    &.tray {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/tray.png");
+        width: 19px;
+        height: 17px;
+    }
+
+
+    &.bed {
+        background-size: 100%;
+        background-image: url("#{$imgUrl}/raster-icons/bed.png");
+        width: 20px;
+        height: 14px;
+    }
+
+    &.next-arrow {
+        background-image: url("#{$imgUrl}/raster-icons/next-arrow.png");
+        width: 15px;
+        height: 7px;
+    }
+
+}

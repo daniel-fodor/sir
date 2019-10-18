@@ -1,0 +1,51 @@
+.cs-btn {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding: 0.2rem 2.3rem;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+
+    &--primary {
+        background: #{$green-v1};
+        color: #{$white};
+
+        &:hover {
+            color: #{$white};
+            background: #{$green-v2};
+        }
+    }
+
+    &--secondary {
+        background: #{$gray-v5};
+        color: #{$black};
+    }
+
+    &--sm {
+        padding: 0.2rem 1.3rem;
+    }
+
+    &--fullwidth {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &--has-icon {
+        span {
+            padding-right: 15px;
+        }
+        i {
+            margin-right: 12px;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    span {
+        line-height: 1em;
+        display: inline-block;
+    }
+
+}
+

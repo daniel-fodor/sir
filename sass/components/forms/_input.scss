@@ -1,0 +1,41 @@
+input,
+input.form-control {
+    color: #{$black};
+    background: none;
+    border: none;
+    font-size: 13px;
+    @include placeholder(#{$black});
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    height: 40px;
+    padding:  0 20px;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+input.has-border {
+    border: 1px solid #{$gray-v4};
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+textarea,
+textarea.form-control {
+    color: #{$black};
+    width: 100%;
+    @include placeholder(#{$black});
+    height: 102px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 20px;
+}

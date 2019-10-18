@@ -1,0 +1,194 @@
+.itinerary {
+    border-bottom: 1px solid #{$gray-v4};
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+
+    .itinerary-items-wrapper {
+        position: relative;
+        display: flex;
+
+        @media (max-width: 600px) {
+            padding-left: 15px;
+        }
+    }
+
+    /* days vertical line */
+    .dayline {
+        width: 60px;
+        height: 100%;
+        margin-right: 25px;
+        flex: 1 1 60px;
+        min-width: 60px;
+
+        @media (max-width: 600px) {
+            width: 50px;
+            flex: 1 1 50px;
+            min-width: unset;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 98%;
+            width: 10px;
+            min-height: 50px;
+            top: 0;
+            background: #{$gray-v1};
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            left: 35px;
+
+            @media (max-width: 600px) {
+                left: 11px;
+            }
+        }
+    }
+
+
+    /* items list */
+    .items {
+        flex: 1 1 auto;
+        margin-bottom: -30px;
+        padding-top: 20px;
+
+        .item {
+            background: #{$gray-v1};
+            padding: 25px;
+            border-radius: 3px;
+            position: relative;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            @media (max-width: 600px) {
+                padding: 15px;
+            }
+        }
+
+        .day {
+            background: url('#{$imgUrl}day-bg.png');
+            width: 55px;
+            height: 50px;
+            position: absolute;
+            right: 102%;
+            top: 2px;
+            line-height: 48px;
+            text-align: center;
+            font-size: 13px;
+            color: #{$white};
+            font-weight: 600;
+
+            @media (max-width: 1400px) {
+               // right: 806px;
+            }
+
+            @media (max-width: 1280px) {
+               // right: 102.55555%;
+            }
+
+            @media (max-width: 600px) {
+                right: 104%;
+            }
+
+            right: 102%;
+
+            span {
+                position: relative;
+                z-index: 1;
+                left: -2px;
+            }
+
+            &:after,
+            &:before {
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 10px;
+            }
+
+            &:after {
+                background: url('#{$imgUrl}day-shadow-bottom.png');
+                top: 100%;
+                left: 50%;
+                margin-left: -6.5px;
+            }
+
+            &:before {
+                background: url('#{$imgUrl}day-shadow-top.png');
+                bottom: 100%;
+                left: 50%;
+                margin-left: -6.5px;
+            }
+        }
+
+        .item-title {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 12px;
+
+            strong {
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            span {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+
+        .item-services {
+            display: flex;
+            font-size: 13px;
+            margin-bottom: 12px;
+
+            @media (max-width: 600px) {
+                flex-wrap: wrap;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                margin-right: 25px;
+
+                @media (max-width: 600px) {
+                    margin-bottom: 5px;
+                }
+            }
+
+            i {
+                margin-right: 12px;
+            }
+        }
+
+        .item-text {
+            line-height: 1.9;
+            margin-bottom: 0;
+        }
+
+        .item-footer {
+            background: #{$gray-v1};
+            padding: 20px 0 0 0;
+            margin-top: 30px;
+            border-top: 1px solid #{$gray-v4};
+
+            a {
+                color: #{$black};
+                display: flex;
+                align-items: center;
+
+                i {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: #{$green-v1};
+                    transform: translate(10px, 0);
+                }
+            }
+        }
+    }
+}

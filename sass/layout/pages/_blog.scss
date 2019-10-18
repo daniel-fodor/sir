@@ -1,0 +1,41 @@
+/* blog page items style */
+.blog-items {
+
+    .blog-item {
+        border: 1px solid #{$gray-v4};
+        margin-bottom: 30px;
+        border-radius: 0;
+
+        img {
+            width: 100%;
+        }
+
+        .blog-info {
+            margin-bottom: 20px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+
+            > div {
+                display: flex;
+                align-items: center;
+                margin-right: 25px;
+            }
+
+            i {
+                margin-right: 7px;
+            }
+        }
+
+        .card-title  {
+            font-size: 1.0625rem;
+            margin-bottom: 20px;
+        }
+
+        p,
+        .card-text {
+            line-height: 1.9;
+            opacity: .7;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.tabs {
+    background: #{$green-v1};
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 0;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+        }
+
+        li {
+
+            @media (max-width: 600px) {
+                width: 50%;
+            }
+
+            &.is-active a {
+                background: #{$white};
+                color: #{$green-v1};
+            }
+
+            a {
+                color: #{$white};
+                display: flex;
+                padding: 20px 25px;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                height: 100%;
+
+                &:hover {
+                    background: #{$white};
+                    color: #{$green-v1};
+                }
+            }
+
+            @media (max-width: 600px) {
+                a {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}

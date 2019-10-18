@@ -1,0 +1,222 @@
+/* Reused sections/blocks style */
+.block {
+
+    /* modifiers */
+    &--has-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &--lg {
+        padding: 100px 0;
+
+        @media (max-width: 800px) {
+            padding: 70px 0;
+
+        }
+
+        @media (max-width: 600px) {
+            padding: 40px 0;
+
+        }
+    }
+
+    &--xl {
+        padding: 150px 0;
+
+        @media (max-width: 800px) {
+            padding: 100px 0;
+
+        }
+
+        @media (max-width: 600px) {
+            padding: 40px 0;
+
+        }
+    }
+
+    &--partners {
+        background: #{$green-v1};
+        padding: 70px 0;
+
+        @media (max-width: 600px) {
+            padding: 40px 0;
+        }
+
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                display: block;
+                padding: 0 20px;
+            }
+
+            @media (max-width: 1200px) {
+                a {
+                    margin-bottom: 30px;
+
+                }
+            }
+
+            @media (max-width: 800px) {
+                a {
+                    width: 33.3333%;
+                }
+            }
+
+
+            @media (max-width: 600px) {
+                margin-bottom: -30px;
+                a {
+                    width: 50%;
+                }
+            }
+        }
+
+
+    }
+
+    &--travelling {
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 720px;
+            text-align: center;
+            margin: 0 auto;
+
+            p {
+                color: #{$white};
+                font-size: 15px;
+                line-height: 1.75;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &--clients {
+        .client-list {
+            padding-top: 40px;
+
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+            .col-12 {
+                padding: 0 10px;
+            }
+
+            @media (max-width: 992px) {
+                margin-bottom: -40px;
+            }
+        }
+    }
+
+    &--packages {
+
+        .packages-list {
+            margin-top: 40px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            .col-12 {
+                padding: 0 10px;
+            }
+
+        }
+    }
+
+    &--explorer {
+        padding: 60px 0;
+
+        @media (max-width: 600px) {
+            padding: 40px 0;
+        }
+    }
+
+    &--goals {
+        margin-bottom: -30px;
+
+        .goals-items {
+            margin-top: 40px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            .col-12 {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    /* elements */
+    &__header {
+
+        &--has-paragraph {
+            p {
+                margin-bottom: 0;
+                max-width: 750px;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 2;
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    &__title {
+
+        &--lg {
+            font-size: 2.18rem;
+            margin-bottom: 60px;
+        }
+
+        &--sm {
+            font-size: 1.875rem;
+            margin-bottom: 15px;
+        }
+
+        &--light {
+            color: #{$white};
+        }
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    /* types of blocks */
+    &__left-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        >div {
+            padding: 40px 0;
+            max-width: 600px;
+
+            @media (max-width: 600px) {
+                padding-top: 0;
+            }
+        }
+
+
+        p {
+            margin-bottom: 25px;
+            list-style: 2;
+        }
+    }
+}

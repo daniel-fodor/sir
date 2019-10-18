@@ -1,0 +1,89 @@
+.page-nav  {
+    padding: 0;
+    position: static;
+
+    @media (max-width: 600px) {
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+}
+
+ul.page-menu {
+    display: flex;
+
+    .nav-item {
+        &:not(:last-child) {
+            margin-right: 46px;
+        }
+
+        &.active {
+            .nav-link {
+                color: #{$green-v1};
+            }
+        }
+
+        /* link style */
+        .nav-link {
+            color: #{$black};
+            padding: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all .3s ease-in-out;
+            line-height: 1;
+
+            &:hover {
+                color: #{$link-hover-color};
+            }
+        }
+
+
+        @media (max-width: 1200px) {
+            text-align: center;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            .nav-link {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+/* custom menu style - bootstrap override */
+@media (max-width: 1200px) {
+    .navbar-light .navbar-toggler {
+        color: #{$black};
+        border-radius: 4px;
+        position: absolute;
+        right: 70px;
+        top: 8px;
+        border-color: #{$black};
+        z-index: 100;
+        padding:5px 10px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        opacity: 1;
+        background-size: 80%;
+        color: #{$black};
+    }
+
+    .navbar-collapse  {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: #{$white};
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-light .navbar-toggler {
+        top: 9px;
+        right: 60px;
+    }
+}
+
+
